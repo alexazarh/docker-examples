@@ -5,7 +5,7 @@ then
   echo "Container created"
   exit 0
 else
-  echo "Container probably exists, starting container
+  echo "Container probably exists, starting container"
   docker start $CONTAINER_NAME
   exit 0
 fi

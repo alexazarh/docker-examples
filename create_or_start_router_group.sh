@@ -4,9 +4,9 @@ docker network create r1-aggr
 docker network create r2-aggr
 docker network create r3-aggr
 
-for i in {0..4};do
+for i in $(seq 1 5);do
 
-    for j in {1..3};do
+    for j in $(seq 1 5);do
 
         docker container run --privileged --name=$CONTAINER_GROUP_NAME-r$j-sw$i --hostname=r$j-sw$i --network=r$j-aggr -itd alpine
         if [ $? -eq 0 ]

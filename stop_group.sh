@@ -1,6 +1,6 @@
 #!/bin/bash
 
-time for i in {0..49};do
+time for i in {0..4};do
 
     time for j in {1..3};do
       
